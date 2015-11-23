@@ -1,0 +1,9 @@
+<div class="header"><h1>FuRung.net</h1>
+<div class="menu"><p>test</p>
+</div>
+</div>
+<p>add a new image</p>
+<%= form_for @image, url: furungs_path, html: { multipart: true } do |form| %>
+	<%= form.file_field :image %>
+	<%= form.submit %>
+<% end %>

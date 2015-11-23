@@ -1,0 +1,17 @@
+<div class="header">
+<div class="menu"><p>test</p>
+</div>
+<h1>FuRung.net</h1>
+</div>
+<%= @image.imagetags do |tag| %>
+        <p>
+          <strong><%= tag.tag %></strong> 
+        </p>
+      <% end %>
+<br />
+<br />
+<div class="image">
+<center>
+<%= link_to image_tag @image.image.url %>
+</center>
+</div>
