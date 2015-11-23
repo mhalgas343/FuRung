@@ -3,7 +3,7 @@
 </div>
 <h1>FuRung.net</h1>
 </div>
-<%= @image.imagetags do |tag| %>
+<%= @image.tags.each do |tag| %>
         <p>
           <strong><%= tag.tag %></strong> 
         </p>
