@@ -1,17 +1,17 @@
 <div class="header">
-<div class="menu"><p>test</p>
-</div>
+	<div class="menu">
+		<ul>
+			<li><%= link_to 'Add Image', '/new' %></li>
+	</div>
 <h1>FuRung.net</h1>
 </div>
-<%= @image.tags.each do |tag| %>
+<br />
+<center>
+<%= link_to image_tag @image.image.url, :style => "max-height: 500px" %>
+</center>
+<div class="tags">
+<% @image.tags.each do |tag| %>
         <p>
-          <strong><%= tag.tag %></strong> 
+          <%= tag.tag %>
         </p>
       <% end %>
-<br />
-<br />
-<div class="image">
-<center>
-<%= link_to image_tag @image.image.url %>
-</center>
-</div>
